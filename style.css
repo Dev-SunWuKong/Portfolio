@@ -574,12 +574,24 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+.preloader {
+    background: #161616 url(images/preloader.gif) center no-repeat;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
         width: 350px;
+    }
+    .preloader {
+        background-size: 15%;
     }
 }
 
@@ -651,6 +663,9 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+    .preloader {
+        background-size: 25%;
+    }
 }
 
 @media (max-width: 690px) {
@@ -668,6 +683,9 @@ footer span a:hover{
     }
     .services .serv-content .card{
         width: 100%;
+    }
+    .preloader {
+        background-size: 30%;
     }
 }
 
@@ -699,5 +717,8 @@ footer span a:hover{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+    .preloader {
+        background-size: 25%;
     }
 }
